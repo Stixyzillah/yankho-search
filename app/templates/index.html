@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <h1 class="my-4">Contacts</h1>
+  <div class="row">
+    {% for contact in contacts %}
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="{{ contact.image_url }}" class="card-img-top" alt="{{ contact.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ contact.name }}</h5>
+            <p class="card-text">{{ contact.business }}</p>
+            <p class="card-text">{{ contact.address }}</p>
+            <p class="card-text">{{ contact.region }}, {{ contact.district }}</p>
+            <p class="card-text">{{ contact.services }}</p>
+            <a href="{{ contact.map_url }}" target="_blank" class="btn btn-primary">View Map</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

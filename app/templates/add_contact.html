@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Add Contact{% endblock %}
+{% block content %}
+  <div class="form-add-contact">
+    <form method="POST" action="">
+      {{ form.hidden_tag() }}
+      <h1 class="h3 mb-3 font-weight-normal">Add New Contact</h1>
+      <div class="form-group">
+        {{ form.name.label(class="form-label") }}
+        {{ form.name(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.business.label(class="form-label") }}
+        {{ form.business(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.address.label(class="form-label") }}
+        {{ form.address(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.region.label(class="form-label") }}
+        {{ form.region(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.district.label(class="form-label") }}
+        {{ form.district(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.services.label(class="form-label") }}
+        {{ form.services(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.map_url.label(class="form-label") }}
+        {{ form.map_url(class="form-control") }}
+      </div>
+      <div class="form-group">
+        {{ form.image_url.label(class="form-label") }}
+        {{ form.image_url(class="form-control") }}
+      </div>
+      {{ form.submit(class="btn btn-primary btn-block") }}
+    </form>
+  </div>
+{% endblock %}

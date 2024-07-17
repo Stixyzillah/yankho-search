@@ -1,0 +1,53 @@
+/* General styles */
+body {
+    padding-top: 4.5rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    color: #007bff !important;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important;
+}
+
+/* Form styles */
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .form-label {
+    margin-bottom: 0.5rem;
+}
+
+.form-add-contact {
+    max-width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+
+/* Dashboard styles */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .list-group {
+    width: 45%;
+}
